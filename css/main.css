@@ -4494,3 +4494,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-text a, .footer-text i {
   color: #f8b600;
 }
+     
+
+
+
+.card img{
+	height:250px;
+	object-fit:cover;
+	border-radius:10px 10px 0 0;
+}
+
+.card{
+	border-radius:10px;
+	overflow:hidden;
+	transition:0.4s;
+}
+
+.card:hover{
+	transform:translateY(-10px);
+}
