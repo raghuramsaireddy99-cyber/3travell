@@ -4517,3 +4517,78 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 250px;
     object-fit: cover;
 }
+/* Booking Form */
+
+.booking-area {
+    background: #f9f9ff;
+    padding: 100px 0;
+}
+
+.booking-form-wrapper {
+    border-radius: 12px;
+}
+
+.booking-form-wrapper label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.booking-form-wrapper .form-control {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+.booking-form-wrapper textarea.form-control {
+    height: auto;
+}
+
+.booking-form-wrapper .primary-btn {
+    border: none;
+    cursor: pointer;
+}
+		    
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+
+
+        .primary-btn{
+            background: #f8b600;
+            color: white;
+            padding: 12px 30px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .primary-btn:hover{
+            background: #222;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* DESTINATION */
+
+        .section-gap{
+            padding: 100px 0;
+        }
+
+        .card img{
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* BOOKING */
+
+        .booking-box{
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+

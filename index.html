@@ -60,21 +60,9 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
 				          <li><a href="packages.html">Packages</a></li>
-				          <li><a href="hotels.html">Hotels</a></li>
-				          <li><a href="insurance.html">Insurence</a></li>
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				            	  <li><a href="elements.html">Elements</a></li>
-						          <li class="menu-has-children"><a href="">Level 2 </a>
-						            <ul>
-						              <li><a href="#">Item One</a></li>
-						              <li><a href="#">Item Two</a></li>
-						            </ul>
-						          </li>					                		
-				            </ul>
-				          </li>					          					          		          
+			 <li><a href="destinations.html">Destinations</a></li>
+
 				          <li><a href="contact.html">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
@@ -177,7 +165,7 @@
 						<h4>Paris</h4>
 						<p>Starting From $999</p>
 
-						<a href="#" class="primary-btn">Book Now</a>
+						<a href="destination.html" class="primary-btn">Book Now</a>
 					</div>
 				</div>
 			</div>
@@ -213,7 +201,7 @@
 						<h4>Dubai</h4>
 						<p>Starting From $899</p>
 
-						<a href="#" class="primary-btn">Book Now</a>
+						<a href="destination.html" class="primary-btn">Book Now</a>
 					</div>
 				</div>
 			</div>
@@ -764,7 +752,158 @@
 				</div>	
 			</section>
 			<!-- End recent-blog Area -->			
+<!-- Start Booking Area -->
+<section class="booking-area section-gap" id="booking">
+    <div class="container">
 
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Book Your Dream Trip</h1>
+                    <p>Fill the form and start your journey with us</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="booking-form-wrapper shadow-lg p-5 bg-white">
+
+                    <form id="bookingForm">
+
+                        <div class="row">
+
+                            <!-- Full Name -->
+                            <div class="col-md-6 mb-4">
+                                <label>Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                >
+                                <small class="text-danger" id="nameError"></small>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6 mb-4">
+                                <label>Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                >
+                                <small class="text-danger" id="emailError"></small>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-md-6 mb-4">
+                                <label>Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="Enter phone number"
+                                >
+                                <small class="text-danger" id="phoneError"></small>
+                            </div>
+
+                            <!-- Destination -->
+                            <div class="col-md-6 mb-4">
+                                <label>Select Destination</label>
+
+                                <select id="destination" class="form-control">
+                                    <option value="">Choose Destination</option>
+                                    <option>Paris</option>
+                                    <option>Dubai</option>
+                                    <option>Maldives</option>
+                                    <option>Singapore</option>
+                                    <option>Thailand</option>
+                                </select>
+
+                                <small class="text-danger" id="destinationError"></small>
+                            </div>
+
+                            <!-- Travel Date -->
+                            <div class="col-md-6 mb-4">
+                                <label>Travel Date</label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    class="form-control"
+                                >
+
+                                <small class="text-danger" id="dateError"></small>
+                            </div>
+
+                            <!-- Travelers -->
+                            <div class="col-md-6 mb-4">
+                                <label>Number of Travelers</label>
+
+                                <input
+                                    type="number"
+                                    id="travelers"
+                                    class="form-control"
+                                    min="1"
+                                    placeholder="Number of travelers"
+                                >
+
+                                <small class="text-danger" id="travelersError"></small>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-md-12 mb-4">
+                                <label>Special Request</label>
+
+                                <textarea
+                                    id="message"
+                                    rows="5"
+                                    class="form-control"
+                                    placeholder="Write your message..."
+                                ></textarea>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="col-md-12 text-center">
+
+                                <button
+                                    type="submit"
+                                    class="primary-btn text-uppercase"
+                                >
+                                    Book Now
+                                </button>
+
+                            </div>
+
+                            <!-- Success Message -->
+                            <div class="col-md-12 text-center mt-4">
+
+                                <div
+                                    id="successMessage"
+                                    class="alert alert-success d-none"
+                                >
+                                    Booking Submitted Successfully!
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Booking Area -->
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">
@@ -864,5 +1003,158 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/owl.carousel.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
+			<script>
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    // INPUTS
+
+    let name =
+    document.getElementById("name").value.trim();
+
+    let email =
+    document.getElementById("email").value.trim();
+
+    let phone =
+    document.getElementById("phone").value.trim();
+
+    let destination =
+    document.getElementById("destination").value;
+
+    let date =
+    document.getElementById("date").value;
+
+    let travelers =
+    document.getElementById("travelers").value;
+
+    // ERROR ELEMENTS
+
+    let nameError =
+    document.getElementById("nameError");
+
+    let emailError =
+    document.getElementById("emailError");
+
+    let phoneError =
+    document.getElementById("phoneError");
+
+    let destinationError =
+    document.getElementById("destinationError");
+
+    let dateError =
+    document.getElementById("dateError");
+
+    let travelersError =
+    document.getElementById("travelersError");
+
+    // RESET ERRORS
+
+    nameError.innerHTML = "";
+    emailError.innerHTML = "";
+    phoneError.innerHTML = "";
+    destinationError.innerHTML = "";
+    dateError.innerHTML = "";
+    travelersError.innerHTML = "";
+
+    let isValid = true;
+
+    // NAME VALIDATION
+
+    if(name === ""){
+
+        nameError.innerHTML =
+        "Please enter your name";
+
+        isValid = false;
+    }
+
+    // EMAIL VALIDATION
+
+    let emailPattern =
+    /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(email === ""){
+
+        emailError.innerHTML =
+        "Please enter email";
+
+        isValid = false;
+
+    } else if(!email.match(emailPattern)){
+
+        emailError.innerHTML =
+        "Invalid email format";
+
+        isValid = false;
+    }
+
+    // PHONE VALIDATION
+
+    if(phone === ""){
+
+        phoneError.innerHTML =
+        "Please enter phone number";
+
+        isValid = false;
+
+    } else if(phone.length < 10){
+
+        phoneError.innerHTML =
+        "Phone number must be 10 digits";
+
+        isValid = false;
+    }
+
+    // DESTINATION VALIDATION
+
+    if(destination === ""){
+
+        destinationError.innerHTML =
+        "Please select destination";
+
+        isValid = false;
+    }
+
+    // DATE VALIDATION
+
+    if(date === ""){
+
+        dateError.innerHTML =
+        "Please select travel date";
+
+        isValid = false;
+    }
+
+    // TRAVELERS VALIDATION
+
+    if(travelers === ""){
+
+        travelersError.innerHTML =
+        "Please enter travelers";
+
+        isValid = false;
+    }
+
+    // SUCCESS
+
+    if(isValid){
+
+        document
+        .getElementById("successMessage")
+        .classList.remove("d-none");
+
+        document
+        .getElementById("bookingForm")
+        .reset();
+    }
+
+});
+
+</script>
+
 		</body>
 	</html>
